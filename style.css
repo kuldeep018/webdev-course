@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.container{
+    padding: 100px;
+    border: 4px solid black;
+    max-width: 800px;
+    margin:100px;
+    text-align: center;
+    background-image: url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ciUyMGdyYWRpZW50JTIwcGF0dGVybnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+}
+.insta{
+
+    background-color: rgb(153, 171, 134);
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+   
+    width: 310px;
+
+}
+.insta:hover{
+    background-color: rgb(174, 166, 223);
+    color: white;
+    border: 2px solid chartreuse;
+}
+.telegram{
+     background-color: rgb(191, 211, 172);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    width: 310px;
+}
+.telegram:hover{
+    background-color: rgb(174, 166, 223);
+    color: white;
+    border: 2px solid chartreuse;
+}
+a{
+    color: black;
+    border: 2px solid blue;
+    padding: 8px;
+    border-radius: 99px;
+    background-color: white;
+    margin-top: 20px;
+}
+a:hover{
+    background-color: rgb(28, 176, 92);
+    color: white;
+    margin-top: 20px;
+    border: 2px solid white;
+}
+
+/* Responsive: Tablet and Mobile */
+@media (max-width: 900px) {
+    .container{
+        padding: 50px;
+        margin: 30px;
+        max-width: 720px;
+    }
+    .insta, .telegram{
+        width: 45%;
+        display: inline-block;
+        margin: 8px 2.5%;
+        vertical-align: top;
+        padding: 20px;
+        font-size: 18px;
+    }
+    a{
+        padding: 10px 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container{
+        padding: 20px;
+        margin: 12px;
+        max-width: 100%;
+        border-width: 2px;
+    }
+    .insta, .telegram{
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+        padding: 16px;
+        font-size: 16px;
+    }
+    a{
+        display: inline-block;
+        padding: 8px 12px;
+        margin-top: 12px;
+    }
+}
